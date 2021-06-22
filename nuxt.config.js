@@ -1,7 +1,10 @@
 export default {
-  target: 'static',
+  target: 'server',
   build: {
-    publicPath: '/'
+    publicPath: '/app'
+  },
+  router: {
+    base: '/'
   },
   buildModules: ['@nuxtjs/tailwindcss']
 }
