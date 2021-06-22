@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   build: {
-    publicPath: '/portfolio'
+    publicPath: '/'
   },
   buildModules: ['@nuxtjs/tailwindcss']
 }
