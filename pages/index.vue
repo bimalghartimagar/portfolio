@@ -1,6 +1,6 @@
 <template>
   <div
-    class="home max-h-full grid grid-cols-1 md:grid-cols-2 justify-items-center items-center font-lato h-screen "
+    class="home grid grid-cols-1 md:grid-cols-2 justify-items-center items-center font-lato"
   >
     <div class="title-wrapper p-4 text-center">
       <img
