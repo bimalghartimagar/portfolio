@@ -17,7 +17,7 @@ export default {
   ssr: true,
   target: 'static',
   build: {
-    publicPath: '/app'
+    publicPath: '/portfolio'
   },
   router: {
     base: '/portfolio'
