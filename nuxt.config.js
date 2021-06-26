@@ -5,7 +5,7 @@ export default {
     publicPath: '/app'
   },
   router: {
-    base: '/'
+    base: '/portfolio'
   },
   buildModules: ['@nuxtjs/tailwindcss']
 }
