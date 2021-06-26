@@ -1,6 +1,6 @@
 <template>
   <div
-    class="home grid grid-cols-1 md:grid-cols-2 justify-items-center items-center font-lato"
+    class="home grid grid-cols-1 gap-y-48 justify-items-center items-center font-lato mt-10"
   >
     <div class="title-wrapper p-4 text-center">
       <img
