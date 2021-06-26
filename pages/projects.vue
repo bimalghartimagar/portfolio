@@ -8,7 +8,7 @@
     <h3 class="text-5xl text-center mb-4 font-semibold">Github Repos, latest first.</h3>
     <section class="grid grid-flow-row max-w-3xl">
         <ListItem
-          class="p-4 my-2 rounded-md bg-alabaster h-56 flex flex-col justify-between"
+          class="p-4 my-2 rounded-md bg-alabaster h-56 flex flex-col justify-between ring-4 ring-black"
           v-for="repo in repos"
           :key="repo.url"
           :repo="repo"
