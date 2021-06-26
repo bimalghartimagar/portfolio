@@ -16,7 +16,7 @@
           class="cursor-pointer text-alabaster"
           href="https://www.endpoint.com"
           target="_blank"
-          referrerpolicy="no-referrer"
+          rel="noreferrer"
           >Endpoint<svg
             class="h-6 w-6 stroke-current stroke-1 inline-block"
             fill="none"
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div>
-      <img class="stroke-current w-3/5 h-3/5 mx-auto" src="~/assets/images/work-illustration.svg" />
+      <img class="stroke-current w-3/5 h-3/5 mx-auto" src="~/assets/images/work-illustration.svg" alt="open source illustration"/>
     </div>
   </div>
 </template>
