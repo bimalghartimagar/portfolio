@@ -1,5 +1,6 @@
 export default {
-  target: 'server',
+  ssr: true,
+  target: 'static',
   build: {
     publicPath: '/app'
   },
