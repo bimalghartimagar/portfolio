@@ -9,8 +9,8 @@
         alt="Profile"
       />
       <div class="py-2 text-7xl font-semibold">Hi, I'm Bimal.</div>
-      <div class="py-2 text-4xl">I design and build web applications.</div>
-      <div class="py-2 text-4xl">
+      <div class="py-2 text-5xl">I design and build web applications.</div>
+      <div class="py-2 text-5xl">
         I work as a software engineer at
         <a
           class="cursor-pointer text-alabaster"
