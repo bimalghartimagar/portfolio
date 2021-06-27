@@ -1,8 +1,12 @@
 <template>
   <div
-    class="home grid grid-cols-1 gap-y-48 justify-items-center items-center font-lato mt-1"
+    class="
+      home
+      font-lato
+      mt-1
+    "
   >
-    <div class="title-wrapper p-4 text-center">
+    <div class="title-wrapper px-4 text-center">
       <img
         class="py-2 mx-auto"
         src="~/assets/images/profile-outline.png"

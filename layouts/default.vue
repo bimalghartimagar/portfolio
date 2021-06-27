@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-green-500 min-h-screen">
+  <div class="bg-green-500 min-h-screen pt-2">
     <TheNavBar />
     <main>
       <Nuxt />
