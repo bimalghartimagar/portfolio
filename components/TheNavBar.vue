@@ -4,7 +4,7 @@
     :class="showMenu ? 'border-2 border-alabaster' : ''"
   >
     <div
-      class="flex flex-row justify-between border-alabaster border-2 p-2"
+      class="lg:hidden flex flex-row justify-between border-alabaster border-2 p-2"
       :class="showMenu ? 'border-t-0 border-b-0 border-l-0 border-r-0' : ''"
     >
       <div class="text-lg font-semibold">Menu</div>
@@ -42,7 +42,7 @@
       </div>
     </div>
     <!-- <transition name="slide"> -->
-      <TheNavLinkList class="grid gap-y-1 mx-1" v-show="showMenu" />
+    <TheNavLinkList class="grid gap-y-1 mx-1 lg:grid lg:grid-flow-col" :class="showMenu?'':'hidden'" />
     <!-- </transition> -->
   </nav>
 </template>
@@ -66,5 +66,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
