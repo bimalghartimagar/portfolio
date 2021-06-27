@@ -1,10 +1,10 @@
 <template>
   <div>
     <div>
-      <div class="font-semibold text-5xl mb-4">{{ repo.name }}</div>
-      <div class="text-3xl mb-4">{{ repo.description }}</div>
+      <div class="font-semibold text-4xl mb-2">{{ repo.name }}</div>
+      <div class="text-xl mb-2 break-words">{{ repo.description }}</div>
     </div>
-    <div class="text-2xl">
+    <div class="text-xl">
       {{ getDate(repo.created_at) }}
     </div>
   </div>

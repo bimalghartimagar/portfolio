@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center mt-20 pb-20 cursor-pointer">
+  <div class="flex justify-center mt-5 pb-2 cursor-pointer">
     <!-- https://devicon.dev/ -->
     <!-- Github -->
     <div class="relative mx-2">

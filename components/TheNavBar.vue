@@ -1,7 +1,7 @@
 <template>
-  <nav class="flex justify-center pt-8" :class="`grid-cols-${menus.length}`">
+  <nav class="grid gap-y-1 md:grid-flow-col pt-8 text-center" >
     <TheNavLink
-      class="mx-4 text-4xl"
+      class="mx-4 rounded-md p-1"
       v-for="menu in menus"
       :key="menu.link"
       :text="menu.name"

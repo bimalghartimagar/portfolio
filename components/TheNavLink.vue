@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="text-lg font-semibold cursor-pointer" :to="link">{{ text }}</NuxtLink>
+  <NuxtLink class=" font-semibold cursor-pointer" :to="link">{{ text }}</NuxtLink>
 </template>
 
 <script>
@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.nuxt-link-exact-active{
+  background-color: #F1F2EB;
+}
+</style>
+
