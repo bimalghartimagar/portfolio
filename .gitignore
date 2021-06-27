@@ -6,3 +6,5 @@ dist/
 .sink
 
 .vscode/
+
+*.prod
