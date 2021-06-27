@@ -1,14 +1,14 @@
 <template>
-  <div>
+  <div class="mt-5">
     <aside class="w-60 text-center justify-self-end hidden">
       <div class="rounded-full py-1.5 px-3 my-2 bg-alabaster">All</div>
       <div class="rounded-full py-1.5 px-3 my-2 bg-alabaster">Backend</div>
       <div class="rounded-full py-1.5 px-3 my-2 bg-alabaster">Frontend</div>
     </aside>
-    <h3 class="text-3xl text-center mb-2 font-semibold">Github Repos, latest first.</h3>
-    <section class="max-w-3xl">
+    <h3 class="text-2xl text-center mb-2 font-semibold">Github Repos, latest first.</h3>
+    <section class="mx-auto md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
         <ListItem
-          class="p-4 m-4 rounded-md bg-alabaster max-h-56 flex flex-col justify-between ring-4 ring-black"
+          class="p-4 m-4 rounded-md bg-alabaster flex flex-col justify-between ring-4 ring-black"
           v-for="repo in repos"
           :key="repo.url"
           :repo="repo"
