@@ -20,7 +20,7 @@ export default {
     publicPath: '/'
   },
   router: {
-    base: '/portfolio'
+    base: '/'
   },
   buildModules: ['@nuxtjs/tailwindcss']
 }
