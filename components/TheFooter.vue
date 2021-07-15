@@ -3,7 +3,7 @@
     <!-- https://devicon.dev/ -->
     <!-- Github -->
     <div class="relative mx-2">
-      <a href="https://github.com/bimalghartimagar" rel="noreferrer">
+      <a aria-label="Github Profile Link" href="https://github.com/bimalghartimagar" rel="noreferrer">
         <svg class="w-8 h-8 mr-4" viewBox="0 0 128 128">
           <g fill="#181616">
             <path
@@ -33,6 +33,7 @@
     <!-- LinkedIn -->
     <div class="relative mx-2">
       <a
+        aria-label="LinkedIn Profile Link"
         href="https://www.linkedin.com/in/bimal-gharti-magar/"
         rel="noreferrer"
       >

@@ -8,5 +8,8 @@ module.exports = {
         'alabaster': '#F1F2EB'
       }
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
