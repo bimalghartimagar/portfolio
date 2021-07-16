@@ -5,28 +5,43 @@
       <div class="rounded-full py-1.5 px-3 my-2 bg-alabaster">Backend</div>
       <div class="rounded-full py-1.5 px-3 my-2 bg-alabaster">Frontend</div>
     </aside>
-    <h3 class="text-2xl text-center mb-2 font-semibold">Github Repos, latest first.</h3>
+    <h3 class="text-2xl text-center mb-2 font-semibold">
+      Github Repos, latest first.
+    </h3>
+    <TheSpinner v-if="isLoading" />
     <section class="mx-auto md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
-        <ListItem
-          class="p-4 m-4 rounded-md bg-alabaster flex flex-col justify-between ring-4 ring-black"
-          v-for="repo in repos"
-          :key="repo.url"
-          :repo="repo"
-        />
+      <ListItem
+        class="
+          p-4
+          m-4
+          rounded-md
+          bg-alabaster
+          flex flex-col
+          justify-between
+          ring-4 ring-black
+        "
+        v-for="repo in repos"
+        :key="repo.url"
+        :repo="repo"
+      />
     </section>
   </div>
 </template>
 
 <script>
 import ListItem from "../components/ListItem.vue";
+import TheSpinner from "../components/TheSpinner.vue";
+
 export default {
-  components: { ListItem },
+  components: { ListItem, TheSpinner },
   data() {
     return {
       repos: [],
+      isLoading: false,
     };
   },
   async fetch() {
+    this.isLoading = true;
     this.repos = await fetch(
       "https://api.github.com/users/bimalghartimagar/repos"
     )
@@ -42,12 +57,13 @@ export default {
               description,
               tags_url,
             }))
-            .sort((a,b)=>{
-              if (a.created_at>b.created_at) return -1
-              else if (a.created_at<b.created_at) return 1
-              else return 0
+            .sort((a, b) => {
+              if (a.created_at > b.created_at) return -1;
+              else if (a.created_at < b.created_at) return 1;
+              else return 0;
             }))
-      );
+      )
+      .finally(() => (this.isLoading = false));
   },
 };
 </script>
