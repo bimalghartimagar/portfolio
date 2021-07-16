@@ -42,7 +42,7 @@
       </div>
     </div>
     <!-- <transition name="slide"> -->
-    <TheNavLinkList class="grid gap-y-1 mx-1 lg:grid lg:grid-flow-col" :class="showMenu?'':'hidden'" />
+    <TheNavLinkList class="grid gap-y-1 mx-1 mb-1 lg:grid lg:grid-flow-col" :class="showMenu?'':'hidden'" />
     <!-- </transition> -->
   </nav>
 </template>
