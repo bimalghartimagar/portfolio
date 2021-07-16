@@ -5,7 +5,7 @@
     <div class="relative mx-2">
       <a aria-label="Github Profile Link" href="https://github.com/bimalghartimagar" rel="noreferrer">
         <svg class="w-8 h-8 mr-4" viewBox="0 0 128 128">
-          <g fill="#181616">
+          <g fill="#000000">
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
