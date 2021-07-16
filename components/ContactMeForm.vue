@@ -1,8 +1,9 @@
 <template>
   <form @submit.prevent="onSubmit">
+    <p class="text-lg font-medium">Send me a message</p> 
     <div class="grid grid-cols-1 gap-6">
       <label class="block">
-        <span class="text-gray-700">Full name</span>
+        <span class="font-semibold">Full name</span>
         <input
           type="text"
           name="name"
@@ -21,7 +22,7 @@
         />
       </label>
       <label class="block">
-        <span class="text-gray-700">Email address</span>
+        <span class="font-semibold">Email address</span>
         <input
           type="email"
           name="email"
@@ -36,11 +37,10 @@
             focus:border-indigo-300
             focus:ring focus:ring-indigo-200 focus:ring-opacity-50
           "
-          placeholder="john@example.com"
         />
       </label>
       <label class="block">
-        <span class="text-gray-700">Message</span>
+        <span class="font-semibold">Message</span>
         <textarea
           name="details"
           v-model="details"
@@ -76,7 +76,9 @@
         </button>
       </label>
       <label class="block">
-        <span class="font-bold text-lg" :class="msgClasses">{{ this.msg }}</span>
+        <span class="font-bold text-lg" :class="msgClasses">{{
+          this.msg
+        }}</span>
       </label>
     </div>
   </form>
@@ -138,6 +140,9 @@ export default {
 
     onSubmit(e) {
       e.preventDefault();
+      this.msgClasses = "";
+      this.msg = "";
+
       fetch(`/api/contact`, {
         method: "POST",
         headers: {
@@ -169,6 +174,9 @@ export default {
         })
         .catch((err) => {
           this.error = err;
+          console.log(err)
+          this.msgClasses = "text-red-700";
+          this.msg = "Something went wrong, please try again."
         });
     },
   },

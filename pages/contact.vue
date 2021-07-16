@@ -6,12 +6,22 @@ export default {
 };
 </script>
 <template>
-  <div class="flex justify-around">
-    <div class="border-2  w-2/5 grid grid-flow-row justify-evenly items-center text-center">
-      <h1 class="text-4xl">Let's chat.</h1>
-      <p class="text-3xl">Let's create something together.</p>
-      <p class="text-3xl">Mail me at <a href="mailto:contact@bimalghartimagar.com.np" class="text-blue-800">contact@bimalghartimagar.com.np</a>.</p>
+  <div class="mt-5 flex justify-around flex-col">
+    <div
+      class="grid grid-flow-row justify-evenly content-center text-center gap-5"
+    >
+      <h1 class="text-3xl font-bold">
+        Let's chat.<br />Let's create something together.
+      </h1>
+      <p class="text-xl font-semibold">
+        Mail me at
+        <a
+          href="mailto:contact@bimalghartimagar.com.np"
+          class="text-alabaster cursor-pointer hover:underline"
+          >contact@bimalghartimagar.com.np</a
+        >
+      </p>
     </div>
-    <contact-me-form class="w-2/5" />
+    <contact-me-form class="mt-5 mx-5" />
   </div>
 </template>
