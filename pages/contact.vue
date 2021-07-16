@@ -6,9 +6,9 @@ export default {
 };
 </script>
 <template>
-  <div class="mt-5 flex justify-around flex-col">
+  <div class="mt-5 flex justify-around flex-col lg:flex-row">
     <div
-      class="grid grid-flow-row justify-evenly content-center text-center gap-5"
+      class="grid grid-flow-row justify-evenly content-center text-center gap-5 lg:w-2/5"
     >
       <h1 class="text-3xl font-bold">
         Let's chat.<br />Let's create something together.
@@ -22,6 +22,6 @@ export default {
         >
       </p>
     </div>
-    <contact-me-form class="mt-5 mx-5" />
+    <contact-me-form class="mt-5 mx-5 lg:w-2/5" />
   </div>
 </template>
