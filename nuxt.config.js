@@ -16,11 +16,5 @@ export default {
   },
   ssr: true,
   target: 'static',
-  build: {
-    publicPath: '/'
-  },
-  router: {
-    base: '/'
-  },
   buildModules: ['@nuxtjs/tailwindcss']
 }
