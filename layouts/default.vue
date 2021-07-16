@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-green-500 min-h-screen lg:grid lg:justify-items-stretch lg:items-baseline pt-4">
+  <div class="bg-green-600 min-h-screen lg:grid lg:justify-items-stretch lg:items-baseline pt-4">
     <TheNavBar />
     <main>
       <Nuxt />
